@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="keywords" content="Factminr">
+	<meta name="description" content="Factminr官网">
+	<title>Factminr官网二</title>
+	<link rel="stylesheet" href="./css/bootstrap.min.css">
+	<link rel="stylesheet" href="./css/base.css">
+	<link rel="stylesheet" href="./css/index.css">
+	<script type="text/javascript" src="./js/jquery-1.10.2.min.js"></script>
+	<script type="text/javascript" src="./js/bootstrap.min.js"></script>
+</head>
+<body>
+<!-- 头部Start -->
+<nav class="navbar navbar-inverse" role="navigation">
+    <div class="container">
+        <div class="navbar-header" style="padding-left: 20px">
+            <a class="navbar-brand" href="#">logo factminr</a>
+        </div>
+        <div class="pull-right">
+            <ul class="nav navbar-nav">
+                <li class="active"><a href="#">关于我们</a></li>
+                <li><a href="#">联系我们</a></li>
+                <li><a href="#">公众号</a></li>
+            </ul>
+        </div>
+    </div>
+</nav>
+<!-- 头部End -->
+<!-- bannerStart -->
+<section class="content-wrap container">
+	<div class="row" id="carousel">
+		<aside class="col-sm-2 aside">
+		<ul>
+			<li class="list1 cur">关于我们</li>
+			<li class="list2">关于产品</li>
+			<li class="list3">联系我们</li>
+			<li class="list4">公众号</li>
+		</ul>
+		</aside>
+		<section class="col-sm-10 content" id="content">
+			<section class="item" data-src="./img/bg2.jpg"></section>
+			<section class="item" data-src="./img/bg3.jpg"></section>
+			<section class="item" data-src="./img/bg4.jpg"></section>
+			<section class="item" data-src="./img/bg5.jpg"></section>
+		</section>
+	</div>
+</section>
+<!-- bannerEnd-->
+<footer class="footer">
+	 <p>&copy;北京自回归科技有限公司 京ICP备16019373号-2</p>
+</footer>
+<script type="text/javascript">
+	$(function(){
+
+				var index = 0;
+				var $ol_lis = $('.aside li');
+				var timer = null;
+				var $item = $('.item');
+				var lis_length = $('.item').length;
+				go();
+				function go(){
+					//切换角标的当前类cur
+					$ol_lis.eq(index).addClass('cur').siblings().removeClass('cur');
+					$('#content').css('background-image','url('+$item.eq(index).attr('data-src')+')');
+					//切换轮播图
+					$item.eq(index).fadeIn().siblings().fadeOut();
+				};
+				$ol_lis.mouseenter(function(){
+				 	index = $(this).index();
+					go();
+				});
+				timer =setInterval(function(){
+				 	index++;
+				 	if(index>=lis_length){
+				 		index = 0;
+				 	}
+				 	go();
+				 },3000);
+				 $('#carousel').mouseenter(function(){
+				 	clearInterval(timer);
+				 }).mouseleave(function(){
+				 	 timer =setInterval(function(){
+					 	index++;
+					 	if(index>=lis_length){
+					 		index = 0;
+					 	}
+					 	go();
+					 },3000);
+				});
+			});
+</script>
+</body>
+</html>
