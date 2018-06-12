@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<script type="text/javascript" src="src/js/jquery-1.10.2.min.js"></script>
+</head>
+<body>
+	<div id="div_img"></div>
+	<script>
+		var body = {
+			"query":"经济"
+		};
+		$.post("http://10.119.1.101:8081/screenshot",body,function(result){
+			var $parent = $("#div_img");
+			for(var i = 0;i<result.body.length;i++){
+				var $img = $('<img src='+result.body.src+' />');
+				$parent.append($img);
+			};
+		});
+	</script>
+</body>
+</html>

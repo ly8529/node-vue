@@ -1,0 +1,465 @@
+<html><head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=no">
+    <title>私募基金管理人公示 - 中国基金业协会</title>
+    <link rel="stylesheet" href="../../common/css/reset.css" type="text/css">
+    <link rel="stylesheet" href="../../common/css/unit.css" type="text/css">
+    <link rel="stylesheet" href="../../common/css/grid.css" type="text/css">
+    <link rel="stylesheet" href="../../common/css/global.css" type="text/css">
+    <link rel="stylesheet" href="../../common/css/module.css" type="text/css">
+    <link rel="stylesheet" href="../../common/css/respond.css" type="text/css">
+    <script type="text/javascript" src="js/jquery-1.10.2.min.js"></script>
+
+    <style type="text/css">
+        .w150 {
+            width: 150px;
+        }
+        .a1 {
+            color: #173bf4;
+        }
+        #qrcode {
+            width: 90px;
+            height: 90px;
+            margin: 0 auto;
+        }
+        #qrcode table tr td {
+            padding: 1px;
+            border-bottom: none;
+        }
+        .fontweightB{ font-weight: bold; }
+    </style>
+
+</head>
+
+<body style="">
+<div class="g-container">
+    <!-- header start -->
+    <div class="g-header clearfix">
+        <a href="/" class="logo pull-left">
+            	<img class="img-desktop" src="../../common/images/logo.png" alt="中国基金业协会信息公示">
+                <img class="img-responsive" src="../../common/images/logo_mobile.png" alt="中国基金业协会信息公示">
+        </a>
+
+        <div class="info pull-right">
+            <span id="IE67" style="display:none;"><span class="fontSpace">组织机构代码</span>：71783348<br></span>
+            <span id="otherBrowser"><span class="fontSpace">组织机构代</span>码：71783348<br></span>
+            社会团体法人登记证书：社证字第4951号
+        </div>
+    </div>
+    <!-- header end -->
+
+    <!-- body start -->
+    <div class="g-body">
+        <!-- 私募基金管理人公示 start -->
+        <div class="m-manager-list m-list-details">
+            <div class="m-top-bar">
+                <h3 class="text-center font-xbig text-bold mb30">私募基金管理人公示信息</h3>
+
+                <p class="mb15"><a href="#" id="comfirmMsg" class="text-danger ml15" onclick="openAMACInfo();">&lt;
+                    &lt;中国证券投资基金业协会提示&gt;&gt;
+                </a></p>
+                <div style="display:none;" id="tooggleAMACInfo">
+                    <p class="mb15" style="text-align: left;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;私募基金管理人规模类、提示类公示信息均来源于中国证券投资基金业协会已登记私募基金管理人提供的信息，基金管理人已书面承诺所有填报信息真实、准确、完整，<br>并承诺承担所有相关法律责任。
+                    </p>
+
+                    <p class="mb15" style="text-align: left;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;中国证券投资基金业协会对私募基金登记备案信息不做实质性事前审查。公示信息不构成对私募基金管理人投资管理能力、持续合规情况的认可，不作为基金资产安全的保证。</p>
+
+                    <p class="mb15" style="text-align: left;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;投资者进行私募基金投资时须谨慎判断和识别风险。</p>
+
+                    <p class="mb15" style="text-align: left;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;社会公众若发现私募基金管理人分类公示信息中存在任何虚假或不实内容，请致电协会投诉电话：<font class="a1">010-66578241</font>，请将相关实名举报或投诉情况发送至邮箱：<a class="a1" style="color: #173bf4;" href="mailto:pf@amac.org.cn">pf@amac.org.cn</a>，<br>或发送至传真<font class="a1">010-66578256</font>，或邮寄至中国证券投资基金业协会（地址：<font class="a1">北京市西城区金融大街20号交通银行大厦B座9层，邮编100033</font>）。
+                    </p>
+
+                    <p class="mb15" style="text-align: left;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;列入分类公示的私募基金管理人如对分类公示有异议，请发函至邮箱：<a class="a1" style="color: #173bf4;" href="mailto:pf@amac.org.cn">pf@amac.org.cn</a>。</p>
+                    <br>
+                </div>
+                <div class="hack-wrp" id="print1">
+                </div>
+                <div class="hack-wrp" id="print2" style="display: none;">
+                    <input type="button" onclick="printPage1()" class="btn btn-primary btn-print" value="打印">
+                </div>
+            </div>
+            <div align="right" id="printDateDiv" style="display: none;">打印日期:<span id="printDate"></span></div>
+            <div align="right" id="printUrlDiv" style="display: none;">打印网址:<span id="printUrl"></span></div>
+            <!-- 数据表格 start -->
+
+            <table class="table table-center table-info">
+                <colgroup>
+                    <col width="25%">
+                    <col width="25%">
+                    <col width="25%">
+                    <col width="25%">
+                </colgroup>
+                <tbody>
+                <tr>
+                    <td class="td-title">机构诚信信息:</td>
+                    <td class="td-content" colspan="3">
+                        <table class="table table-center table-info">
+                        </table>
+                    </td>
+                </tr>
+                
+                <tr>
+                <td colspan="4" style="padding: 0px 0px;text-align: left;">
+                   <div style="background-color: #DFDFDF;padding: 8px 10px;font-weight:bold;">机构信息</div>
+                </td>
+                </tr>
+                <tr>
+                    <td class="td-title">基金管理人全称(中文):</td>
+                    <td class="td-content" colspan="2">
+                    	<div id="complaint1" style="display: none;">深圳市康成亨投资有限公司 &nbsp;</div>
+                    	<div id="complaint2">深圳市康成亨投资有限公司 &nbsp; <input type="button" id="complaint" onclick="complain();" style="border:none;background-color:#b64545;color:#FFF;width:50px;border-radius:4px;" value="投诉">
+                    	</div>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="td-title">基金管理人全称(英文):</td>
+                    <td class="td-content" colspan="2">Shenzhen KCH Investment Co.,Ltd</td>
+                </tr>
+                <tr>
+                    <td class="td-title">登记编号:</td>
+                    <td class="td-content" colspan="2">P1000690</td>
+                </tr>
+                <tr>
+                    <td class="td-title">组织机构代码:</td>
+                    <td class="td-content" colspan="3">66417331-8</td>
+                </tr>
+                <tr>
+                    <td class="td-title">登记时间:</td>
+                    <td class="td-content">
+                        2014-04-01
+                    </td>
+                    <td class="td-title">成立时间:</td>
+                    <td class="td-content">
+                        2007-07-06
+                    </td>
+                </tr>
+           
+                <tr>
+                    <td class="td-title">注册地址:</td>
+                    <td class="td-content" colspan="3">广东省深圳市南山区粤海街道粤兴四道1号中山大学深圳产学研大楼807</td>
+                </tr>
+                <tr>
+                    <td class="td-title">办公地址:</td>
+                    <td class="td-content" colspan="3">广东省深圳市南山区南山区粤海街道粤兴四道1号中山大学深圳产学研大楼807</td>
+                </tr>
+                
+                <tr>
+                    <td class="td-title">注册资本(万元)(人民币):</td>
+                    <td class="td-content">1,000</td>
+                    <td class="td-title">实缴资本(万元)(人民币):</td>
+                    <td class="td-content">1,000</td>
+                </tr>
+                <tr>
+                    <td class="td-title">企业性质:</td>
+                    <td class="td-content">内资企业</td>
+                    <td class="td-title">注册资本实缴比例:</td>
+                    <td class="td-content">
+                                100%
+                    </td>
+                </tr>
+                <tr>
+                    <td class="td-title">管理基金主要类别:</td>
+                    <td class="td-content">私募证券投资基金管理人</td>
+                    <td class="td-title">申请的其他业务类型:</td>
+                    <td class="td-content">
+                    </td>
+                </tr>
+                
+                <tr>
+                    <td class="td-title">员工人数:</td>
+                    <td class="td-content">3</td>
+                    <td class="td-title">机构网址:</td>
+                    <td class="td-content">
+                        <a href="javascript:void(0);" onclick="javascript:gotoWebsite('www.kchtz.com.cn');">www.kchtz.com.cn</a>
+                    </td>
+                </tr>
+
+                <!-- 会员开始 -->
+                    <tr>
+                        <td colspan="4" style="padding: 0px 0px;text-align: left;">
+                            <div style="background-color: #DFDFDF;padding: 8px 10px;font-weight:bold;">会员信息</div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="td-title">是否为会员:</td>
+                        <td class="td-content" colspan="3">否</td>
+                    </tr>
+                <!-- 会员结束 -->
+
+                <!-- 法律意见书信息开始 -->
+                <tr>
+                <td colspan="4" style="padding: 0px 0px;text-align: left;">
+                   <div style="background-color: #DFDFDF;padding: 8px 10px;font-weight:bold;">法律意见书信息</div>
+                </td>
+                </tr>
+                <tr>
+                    <td class="td-title">法律意见书状态:</td>
+                    <td class="td-content" colspan="3">
+                    </td>
+                </tr>
+                <!-- 法律意见书信息结束 -->
+                
+                <tr>
+                <td colspan="4" style="padding: 0px 0px;text-align: left;">
+                   <div style="background-color: #DFDFDF;padding: 8px 10px;font-weight:bold;">高管信息</div>
+                </td>
+                </tr>
+                <tr>
+                    <td class="td-title">法定代表人/执行事务合伙人(委派代表)姓名:</td>
+                    <td class="td-content" colspan="3">袁亚康</td>
+                </tr>
+                
+                <tr>
+                    <td class="td-title">是否有从业资格:</td>
+                    <td class="td-content">
+                            是
+                    </td>
+                    <td class="td-title">资格取得方式:</td>
+                    <td class="td-content">资格认定</td>
+                </tr>
+                
+                <tr>
+                    <td class="td-title">法定代表人/执行事务合伙人(委派代表)工作履历:</td>
+                    <td class="td-content" colspan="3">
+                        <table class="table table-center table-noborder" style="width:80%;">
+                            <colgroup>
+                                <col width="30%">
+                                <col width="40%">
+                                <col width="30%">
+                            </colgroup>
+                            <thead>
+                            <tr>
+                                <th>时间</th>
+                                <th>任职单位</th>
+                                <th>职务</th>
+                            </tr>
+                            </thead>
+                            <tbody>
+                                    <tr>
+                                        <td>2007.07 -
+                                                2017.08
+                                        </td>
+                                        <td>深圳市康成亨投资有限公司</td>
+                                        <td>法定代表人、董事长、总经理</td>
+                                    </tr>
+                                    <tr>
+                                        <td>1993.07 -
+                                                2007.05
+                                        </td>
+                                        <td>深圳市中科投股份有限公司</td>
+                                        <td>总经理助理</td>
+                                    </tr>
+                                    <tr>
+                                        <td>1987.08 -
+                                                1993.04
+                                        </td>
+                                        <td>南通市供销社</td>
+                                        <td>员工</td>
+                                    </tr>
+                            </tbody>
+                        </table>
+                        <table class="table table-noborder table-responsive">
+                            <tbody>
+                                    <tr>
+                                        <td>时间：2007.07 -
+                                                2017.08
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>任职单位：深圳市康成亨投资有限公司</td>
+                                    </tr>
+                                    <tr>
+                                        <td>职务：法定代表人、董事长、总经理</td>
+                                    </tr>
+                                    <tr>
+                                        <td>时间：1993.07 -
+                                                2007.05
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>任职单位：深圳市中科投股份有限公司</td>
+                                    </tr>
+                                    <tr>
+                                        <td>职务：总经理助理</td>
+                                    </tr>
+                                    <tr>
+                                        <td>时间：1987.08 -
+                                                1993.04
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>任职单位：南通市供销社</td>
+                                    </tr>
+                                    <tr>
+                                        <td>职务：员工</td>
+                                    </tr>
+                            </tbody>
+                        </table>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td class="td-title">高管情况:</td>
+                    <td class="td-content" colspan="3">
+                        <table class="table table-center table-noborder" style="width:80%;">
+                            <colgroup>
+                                <col width="30%">
+                                <col width="40%">
+                                <col width="30%">
+                            </colgroup>
+                            <thead>
+                            <tr>
+                                <th>高管姓名</th>
+                                <th>职务</th>
+                                <th>是否具有基金从业资格</th>
+                            </tr>
+                            </thead>
+                            <tbody>
+                                    <tr>
+                                        <td>袁亚康</td>
+                                        <td>法定代表人  董事长  总经理</td>
+                                        <td>
+                                                是(资格认定)
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>高国仕</td>
+                                        <td>合规风控  其他</td>
+                                        <td>
+                                                是(通过考试)
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>康亚</td>
+                                        <td>副总经理  信息填报负责人</td>
+                                        <td>
+                                                是(通过考试)
+                                        </td>
+                                    </tr>
+                            </tbody>
+                        </table>
+                        <table class="table table-noborder table-responsive">
+                            <tbody>
+                                    <tr>
+                                        <td>高管姓名：袁亚康</td>
+                                    </tr>
+                                    <tr>
+                                        <td>职务：法定代表人  董事长  总经理</td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            是否具有基金从业资格：
+                                                是(资格认定)
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>高管姓名：高国仕</td>
+                                    </tr>
+                                    <tr>
+                                        <td>职务：合规风控  其他</td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            是否具有基金从业资格：
+                                                是(通过考试)
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>高管姓名：康亚</td>
+                                    </tr>
+                                    <tr>
+                                        <td>职务：副总经理  信息填报负责人</td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            是否具有基金从业资格：
+                                                是(通过考试)
+                                        </td>
+                                    </tr>
+                            </tbody>
+                        </table>
+                    </td>
+                </tr>
+                <tr>
+                <td colspan="4" style="padding: 0px 0px;text-align: left;">
+                   <div style="background-color: #DFDFDF;padding: 8px 10px;font-weight:bold;">产品信息</div>
+                </td>
+                </tr>
+                <tr>
+                    <td class="td-title">暂行办法实施前成立的基金:</td>
+                    <td class="td-content" colspan="3">
+                                <p><a href="../fund/351000129923.html">华润信托-康成亨1期证券投资集合资金信托计划</a></p>
+                                    <p><span class="fontweightB">当月月报：</span>应披露0条，未披露0条；<span class="fontweightB">季报：</span>应披露0条，未披露0条；<span class="fontweightB">半年报：</span>应披露0条，未披露0条；<span class="fontweightB">年报：</span>应披露0条，未披露0条；</p>
+                                <p><a href="../fund/351000137331.html">长城康成亨1号基金</a></p>
+                                    <p><span class="fontweightB">当月月报：</span>应披露0条，未披露0条；<span class="fontweightB">季报：</span>应披露4条，未披露0条；<span class="fontweightB">半年报：</span>应披露0条，未披露0条；<span class="fontweightB">年报：</span>应披露2条，未披露1条；</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="td-title">暂行办法实施后成立的基金:</td>
+                    <td class="td-content" colspan="3">
+                                <p><a href="../fund/351000354245.html">康成亨慧创宏观对冲3号风险缓冲型证券投资基金 </a></p>
+                                    <p><span class="fontweightB">当月月报：</span>应披露0条，未披露0条；<span class="fontweightB">季报：</span>应披露4条，未披露0条；<span class="fontweightB">半年报：</span>应披露0条，未披露0条；<span class="fontweightB">年报：</span>应披露2条，未披露1条；</p>
+                                <p><a href="../fund/351000227654.html">康成亨量化对冲2号风险缓冲型证券投资基金 </a></p>
+                                    <p><span class="fontweightB">当月月报：</span>应披露0条，未披露0条；<span class="fontweightB">季报：</span>应披露4条，未披露0条；<span class="fontweightB">半年报：</span>应披露0条，未披露0条；<span class="fontweightB">年报：</span>应披露2条，未披露1条；</p>
+                    </td>
+                </tr>
+                <tr>
+                <td colspan="4" style="padding: 0px 0px;text-align: left;">
+                   <div style="background-color: #DFDFDF;padding: 8px 10px;font-weight:bold;">诚信信息</div>
+                </td>
+                </tr>
+                <tr>
+                    <td class="td-title">机构信息最后更新时间:</td>
+                    <td class="td-content" colspan="3">2018-02-08</td>
+                </tr>
+                <tr>
+                    <td class="td-title">特别提示信息:</td>
+                    <td class="td-content" colspan="3" id="specialInfos">
+                        <!-- 法律意见书 -->
+                        <!-- 法律意见书 -->
+                    </td>
+                </tr>
+                </tbody>
+            </table>
+
+            <div class="align-center mt20 hack-wrp" id="close">
+                <button onclick="closeW();" style="width:100px;height:30px;">关闭</button>
+            </div>
+            <div class="g-footer1" id="foot2" style="display: none;">版权所有：中国证券投资基金业协会 京ICP备16045718号</div>
+        </div>
+        <!-- 私募基金管理人公示 end -->
+    </div>
+    <!-- body end -->
+
+    <!-- footer start -->
+    <div class="g-footer" id="foot1" style="position:relative;">版权所有：中国证券投资基金业协会 京ICP备16045718号</div>
+    <!-- footer end -->
+</div>
+<script>
+$(function(){
+	var str = $("#specialTips").html();
+    if(str && $.trim(str) != "" && str.indexOf("<a href") == -1) {
+        var reg = str.match(/(http|https):\/\/[\w\-_]+(\.[\w\-_]+)+([\w\-\.,@?^=%&:/~\+#]*[\w\-\@?^=%&/~\+#])?/ig);
+        var strings = str.replace(reg[0],'<a href="'+reg[0]+'" target="_blank">'+reg[0]+'</a>');
+        $("#specialTips").html(strings);
+    }
+    var namesStr = new Array();
+    if(namesStr.length > 0) {
+ 	   var ss = namesStr.join("，");
+ 	   var cc = $("#specialInfos").html();
+ 	   if($("#specialInfos").find("br").length == 0) {
+    	   $("#specialInfos").html(cc+"<br/>高管"+ss+"无基金从业资格");
+ 	   }else{
+ 		   $("#specialInfos").html(cc+"高管"+ss+"无基金从业资格");
+ 	   }
+    }	
+});   
+</script>
+<script type="text/javascript">
+   var str = $("td").text();
+   console.info(str);
+   var reg1 = new RegExp("^高管信息([\u4E00-\u9FA5]+)时间$");
+   console.info(str.match(reg1));
+</script>
+
+</body></html>

@@ -1,0 +1,20 @@
+{
+  "name": "phantomjs",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "phantomjs": "node_modules/.bin/phantomjs"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "express": "^4.16.3",
+    "phantomjs": "^2.1.7+deprecated"
+  },
+  "dependencies": {
+    "body-parser": "^1.18.3",
+    "cookie-parser": "^1.4.3"
+  }
+}

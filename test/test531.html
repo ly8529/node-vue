@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<body>
+	<script>
+		(function captchaReloadImage(){
+			sChars="abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789";
+			sRand="";
+			for(i=0;i<16;i++)
+			{
+				sRand+=sChars.charAt(Math.round(sChars.length*Math.random()));
+			}
+			var src="app_Login_captcha_show.php?sid="+sRand;
+			return sRand;
+		}())
+	</script>
+</body>
+</html>

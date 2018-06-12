@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>jq-1-jq的无new 构建</title>
+</head>
+<body>
+	<script type="text/javascript">
+		var aQuery = function(selector, context) {
+		       return  new aQuery.prototype.init();
+		}
+		aQuery.prototype = {
+		    init: function() {
+		        return this;
+		    },
+		    name: function() {
+		        return this.age
+		    },
+		    age: 20
+		}
+
+		aQuery.prototype.init.prototype = aQuery.prototype;
+
+		console.log(aQuery().name()) //20
+	</script>
+</body>
+</html>
